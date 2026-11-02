@@ -1,0 +1,12 @@
+{
+  "traced_csv_dir": "data/input",
+  "repos_root": "/path/to/disposable-apache-clones",
+  "work_tmpdir": "/path/to/scratch",
+  "scitools_bin": "/opt/scitools/bin/linux64",
+  "output_dir": "results/generated",
+  "permutations": 9999,
+  "issue_bootstraps": 1999,
+  "file_bootstraps": 1999,
+  "contrast_bootstraps": 1999,
+  "seed": 20261021
+}
