@@ -109,7 +109,7 @@ The source path reads **only Java** introduction-linked files at the two endpoin
 
 **RQ2:** *Do file modification frequency and structural metric changes show an association in SF and NSF ATD?*
 
-The source path's RQ2 procedure uses `scripts/rq2_pipeline/legacy_git_ck_extractor.py` to follow files through Git commit histories from introduction to repayment, count commits per original file, and associate them with the already-extracted **nine file-level endpoint measurements**. It pairs file paths and applies VioMod filtering; original file/class pairings and RQ1 issue means are **not** interchangeable with RQ2's within-file CK means.
+The source path's RQ2 procedure uses `scripts/rq2_pipeline/legacy_git_ck_extractor.py` to follow files through Git commit histories from introduction to repayment, count commits per original file, and associate them with the already-extracted **nine file-level endpoint measurements**. 
 
 - **Primary:** One matched-file **mean commit count** and one **mean signed metric delta** per ATD issue/metric. Separate SF and NSF **Spearman rho**, within-project issue-permutation p-values, project-stratified issue bootstrap 95% CI, **Holm over 18 tests** (nine metrics × two groups).
 - **Sensitivity:** File-level Spearman, with whole-issue cluster bootstrap within projects for CI and approximate centered-bootstrap p-values; separate Holm family of 18 tests.
@@ -123,8 +123,7 @@ The source path's RQ2 procedure uses `scripts/rq2_pipeline/legacy_git_ck_extract
 | `results/generated/rq2/RQ3_SENSITIVITY_file_spearman_issue_cluster_bootstrap.csv` | File-level sensitivity (manuscript Table V) |
 | `results/generated/rq2/RQ3_issue_level_matched_file_pairs.csv` | Issue aggregation audit |
 | `results/generated/rq2/RQ2_coverage_audit.csv` | Metric/cohort coverage |
-| `results/generated/rq2/RQ2_DIRECT_SF_NSF_correlation_difference.csv` | Exploratory direct comparison, **not included in the submitted article** |
-| `results/generated/rq2/Figure3_RQ2_file_commits_vs_nine_metric_deltas.pdf` | Figure 3, descriptive scatter plot |
+| `results/generated/rq2/RQ2_DIRECT_SF_NSF_correlation_difference.csv` | Exploratory direct comparison |
 
 
 ## Folder layout
